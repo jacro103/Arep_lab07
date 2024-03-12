@@ -71,7 +71,6 @@ public class SecureURLReader {
         } catch (KeyManagementException ex) {
             Logger.getLogger(SecureURLReader.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
 
     public static void readURL(String sitetoread) {
@@ -111,5 +110,6 @@ public class SecureURLReader {
             System.err.println(x);
         }
     }
+
 }
 
