@@ -57,6 +57,9 @@ Para el ejercicio se crearon llaves privadas, las cuales estan en el directorio 
 
 Las contraseñas de los usuarios son encriptadas desde el javaScript de la pagina index.html para garantizar que no se conozcan las contraseñas.
 
+#### Arquitectura:
+![](./Images/Arquitectura.png)<br>
+Desde un bowser cualquiera se conecta por medio de https a un servidor fachada que nos permitira enviar la informacion necesaria (username & password) para poder acceder al segundo servidor, el cual podra entabla una comunicacion por medio de HTTPS de POST-GET, cada servidor possera un servicio por medio de spark, que estara escrito en java, ambos usando certificados y las llaves de los respectivos.
 
 #### Video: 
 [Video](https://pruebacorreoescuelaingeduco-my.sharepoint.com/:v:/g/personal/jose_correa-r_mail_escuelaing_edu_co/EUrC3QY9EplOrHUqyfMsFb0BzQSgr_WBSt8TH2rQSzx32w?e=ZhySgy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
